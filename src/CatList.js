@@ -4,7 +4,7 @@ import React from 'react';
 const CatList = ({ catPics }) => 
 
     <div>
-        {catPics.map(x=> <img src={x.url} alt={x.id} key={x.id}></img>)}
+        {catPics.map((x, i) => (<img key={i} src={x.url} alt={x.id} ></img>))}
     </div>
 
 
